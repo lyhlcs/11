@@ -3,7 +3,7 @@
 import re
 
 
-def write_to_ans(data_list, num, answer):  # 将一行中找到的敏感词写到文件中
+def write_to_ans(data_list, num, answer):  # 将一行中找到的敏感词写到文件中 tijiao
     for item in data_list:
         answer.write("Line"+num+item+'\n')
 
