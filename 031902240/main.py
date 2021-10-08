@@ -1,10 +1,10 @@
 # !/usr/bin/env python
-# -*- coding:utf-8 -*-
 import re
+import sys
 
-path1 = input()
-path2 = input()
-path3 = input()
+path1 = sys.argv[1]
+path2 = sys.argv[2]
+path3 = sys.argv[3]
 total = 0
 file = open(path2, 'rt', encoding='utf-8')
 answer = open(path3, 'wt', encoding='utf-8')
