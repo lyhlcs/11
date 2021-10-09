@@ -15,7 +15,7 @@ def write_to_ans(data_list, num, line):  # 将每行读出的敏感词答案写�
     global total
     for item in data_list:
         total = total + 1
-        answer.write("Line:" + str(num) + " <" + item + "> " + item + '\n')
+        answer.write("Line" + str(num) + ":" + " <" + item + "> " + item + '\n')
     return line
 
 
@@ -51,7 +51,7 @@ def instr(item, line_num, line):  # 中间有字符串的情况
         for case1 in data_list:
             total = total + 1
             num_str = str(line_num)
-            answer.write("Line:" + num_str + " <" + item + "> " + case1 + '\n')
+            answer.write("Line" + num_str + ":" + " <" + item + "> " + case1 + '\n')
 
     return line
 
@@ -64,7 +64,7 @@ def directly(item, line_num, line):  # 直接删除有对应的单词
         for case in data_list:
             total = total + 1
             num_str = str(line_num)
-            answer.write("Line:" + num_str + " <" + item + "> " + case + '\n')
+            answer.write("Line" + num_str +":" + " <" + item + "> " + case + '\n')
     return line
 
 
